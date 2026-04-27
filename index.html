@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clubhouse Cafe — A premium artisan coffee experience. Explore our curated menu, cozy ambiance, and specialty brews in a warm, inviting atmosphere.">
-    <title>Clubhouse Cafe — Artisan Coffee & Cozy Vibes</title>
+    <meta name="description" content="Clubhouse Cafe — Premium coffee meets epic gaming. Artisan brews, cozy vibes, and an immersive gaming lounge all under one roof.">
+    <title>Clubhouse Cafe — Coffee, Gaming & Good Vibes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -15,12 +15,13 @@
     <!-- ═══════════ NAVBAR ═══════════ -->
     <nav class="navbar" id="navbar">
         <a href="#home" class="nav-logo">
-            <span class="logo-icon">☕</span>
+            <span class="logo-icon">🎮☕</span>
             <span class="logo-text">Clubhouse<span class="logo-accent">Cafe</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
             <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
             <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+            <li><a href="#gaming" class="nav-link" data-section="gaming">Gaming</a></li>
             <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
             <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
         </ul>
@@ -35,17 +36,18 @@
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="hero-particles"></div>
         <div class="hero-content">
-            <p class="hero-tagline" data-animate="fade-up">EST. 2020 — ARTISAN COFFEE</p>
+            <p class="hero-tagline" data-animate="fade-up">EST. 2020 — COFFEE & GAMING LOUNGE</p>
             <h1 class="hero-title" data-animate="fade-up" data-delay="1">
                 Welcome to<br>
                 <span class="hero-title-accent">Clubhouse</span> Cafe
             </h1>
             <p class="hero-description" data-animate="fade-up" data-delay="2">
-                Where every cup tells a story. Handcrafted beverages, artisan pastries, 
-                and a space that feels like home.
+                Where artisan coffee meets epic gaming. Handcrafted beverages, 
+                immersive gaming setups, and a space that feels like your ultimate hangout.
             </p>
             <div class="hero-actions" data-animate="fade-up" data-delay="3">
                 <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#gaming" class="btn btn-neon">🎮 Gaming Zone</a>
                 <a href="#gallery" class="btn btn-outline">View Gallery</a>
             </div>
         </div>
@@ -77,6 +79,11 @@
                 <span class="about-stat-number" data-count="12">0</span>
                 <span class="about-stat-label">Specialty Brews</span>
             </div>
+            <div class="about-divider"></div>
+            <div class="about-stat">
+                <span class="about-stat-number neon-text" data-count="20">0</span>
+                <span class="about-stat-label">Gaming Stations</span>
+            </div>
         </div>
     </section>
 
@@ -98,6 +105,80 @@
 
             <div class="menu-grid" id="menu-grid" data-animate="fade-up" data-delay="2">
                 <!-- JS-populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ GAMING ZONE ═══════════ -->
+    <section class="gaming-section" id="gaming">
+        <div class="gaming-bg-effects">
+            <div class="rgb-line rgb-line-1"></div>
+            <div class="rgb-line rgb-line-2"></div>
+            <div class="rgb-line rgb-line-3"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label neon-text">Level Up Your Experience</p>
+                <h2 class="section-title gaming-title">Gaming <span class="neon-text">Zone</span></h2>
+                <p class="section-subtitle">Drop in, pick your weapon, and game on. Premium setups, zero lag, maximum fun — fuelled by the best coffee in town.</p>
+            </div>
+
+            <div class="gaming-grid" data-animate="fade-up" data-delay="1">
+                <div class="gaming-card" data-tilt>
+                    <div class="gaming-card-icon">🖥️</div>
+                    <h3>PC Gaming</h3>
+                    <p>High-end rigs with RTX graphics, 240Hz monitors, and mechanical keyboards. Play AAA titles at max settings.</p>
+                    <div class="gaming-card-glow"></div>
+                </div>
+                <div class="gaming-card" data-tilt>
+                    <div class="gaming-card-icon">🎮</div>
+                    <h3>Console Corner</h3>
+                    <p>PS5 & Xbox Series X on big-screen TVs. Grab a controller and dive into your favourite titles with friends.</p>
+                    <div class="gaming-card-glow"></div>
+                </div>
+                <div class="gaming-card" data-tilt>
+                    <div class="gaming-card-icon">🏆</div>
+                    <h3>Tournaments</h3>
+                    <p>Weekly esports tournaments with prizes. Valorant, FIFA, Tekken — compete, win, and earn bragging rights.</p>
+                    <div class="gaming-card-glow"></div>
+                </div>
+                <div class="gaming-card" data-tilt>
+                    <div class="gaming-card-icon">🎲</div>
+                    <h3>Board Games & VR</h3>
+                    <p>Not just digital — explore our board game library or step into VR worlds for a mind-blowing experience.</p>
+                    <div class="gaming-card-glow"></div>
+                </div>
+            </div>
+
+            <div class="gaming-pricing" data-animate="fade-up" data-delay="2">
+                <div class="pricing-card">
+                    <div class="pricing-badge">Casual</div>
+                    <div class="pricing-amount"><span>₹</span>99<small>/hr</small></div>
+                    <ul class="pricing-perks">
+                        <li>✓ Any PC or Console</li>
+                        <li>✓ High-speed internet</li>
+                        <li>✓ Complimentary water</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Pro Gamer</div>
+                    <div class="pricing-amount"><span>₹</span>249<small>/3 hrs</small></div>
+                    <ul class="pricing-perks">
+                        <li>✓ Premium RTX stations</li>
+                        <li>✓ 1 free coffee or shake</li>
+                        <li>✓ Priority seating</li>
+                        <li>✓ Tournament entry</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-badge">All-Day Pass</div>
+                    <div class="pricing-amount"><span>₹</span>599<small>/day</small></div>
+                    <ul class="pricing-perks">
+                        <li>✓ Unlimited gaming</li>
+                        <li>✓ 2 free beverages</li>
+                        <li>✓ Snack combo included</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -301,13 +382,14 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <span class="logo-icon">☕</span>
+                <span class="logo-icon">🎮☕</span>
                 <span class="logo-text">Clubhouse<span class="logo-accent">Cafe</span></span>
-                <p class="footer-tagline">Where every cup tells a story.</p>
+                <p class="footer-tagline">Where every cup tells a story & every game tells a legend.</p>
             </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#menu">Menu</a>
+                <a href="#gaming">Gaming</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
             </div>
