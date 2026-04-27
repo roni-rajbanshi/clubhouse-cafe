@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clubhouse Cafe — A premium artisan coffee experience. Explore our curated menu, cozy ambiance, and specialty brews in a warm, inviting atmosphere.">
+    <title>Clubhouse Cafe — Artisan Coffee & Cozy Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Clubhouse<span class="logo-accent">Cafe</span></span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#menu" class="nav-link" data-section="menu">Menu</a></li>
+            <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <a href="#menu" class="nav-cta">View Menu</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ═══════════ HERO / HOME ═══════════ -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-content">
+            <p class="hero-tagline" data-animate="fade-up">EST. 2020 — ARTISAN COFFEE</p>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="1">
+                Welcome to<br>
+                <span class="hero-title-accent">Clubhouse</span> Cafe
+            </h1>
+            <p class="hero-description" data-animate="fade-up" data-delay="2">
+                Where every cup tells a story. Handcrafted beverages, artisan pastries, 
+                and a space that feels like home.
+            </p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="3">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#gallery" class="btn btn-outline">View Gallery</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" data-animate="fade-up" data-delay="4">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT STRIP ═══════════ -->
+    <section class="about-strip" data-animate="fade-up">
+        <div class="about-strip-inner">
+            <div class="about-stat">
+                <span class="about-stat-number" data-count="6">0</span>
+                <span class="about-stat-label">Years of Craft</span>
+            </div>
+            <div class="about-divider"></div>
+            <div class="about-stat">
+                <span class="about-stat-number" data-count="42">0</span>
+                <span class="about-stat-label">Menu Items</span>
+            </div>
+            <div class="about-divider"></div>
+            <div class="about-stat">
+                <span class="about-stat-number" data-count="15000">0</span>
+                <span class="about-stat-label">Happy Guests</span>
+            </div>
+            <div class="about-divider"></div>
+            <div class="about-stat">
+                <span class="about-stat-number" data-count="12">0</span>
+                <span class="about-stat-label">Specialty Brews</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ MENU ═══════════ -->
+    <section class="menu-section" id="menu">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Our Curated Selection</p>
+                <h2 class="section-title">The Menu</h2>
+                <p class="section-subtitle">Every item is crafted with love, using the finest ingredients sourced from local farms and global roasteries.</p>
+            </div>
+
+            <div class="menu-tabs" data-animate="fade-up" data-delay="1">
+                <button class="menu-tab active" data-tab="coffee">Coffee & Tea</button>
+                <button class="menu-tab" data-tab="food">Bites & Bowls</button>
+                <button class="menu-tab" data-tab="desserts">Desserts</button>
+                <button class="menu-tab" data-tab="specials">Specials</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid" data-animate="fade-up" data-delay="2">
+                <!-- JS-populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ GALLERY (HORIZONTAL SCROLL) ═══════════ -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header" data-animate="fade-up">
+            <p class="section-label">A Peek Inside</p>
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Moments captured at the Clubhouse — warmth, flavours, and stories in every frame.</p>
+        </div>
+
+        <div class="gallery-marquee-wrapper" data-animate="fade-up" data-delay="1">
+            <div class="gallery-marquee" id="gallery-marquee-1">
+                <div class="gallery-track">
+                    <div class="gallery-card">
+                        <img src="images/cafe-interior.png" alt="Clubhouse Cafe cozy interior" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Our Cozy Interior</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-food.png" alt="Artisan coffee and pastry" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Artisan Creations</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-outdoor.png" alt="Outdoor terrace seating" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Terrace Vibes</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-barista.png" alt="Barista crafting latte art" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>The Art of Coffee</span>
+                        </div>
+                    </div>
+                    <!-- duplicates for seamless loop -->
+                    <div class="gallery-card">
+                        <img src="images/cafe-interior.png" alt="Clubhouse Cafe cozy interior" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Our Cozy Interior</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-food.png" alt="Artisan coffee and pastry" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Artisan Creations</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-outdoor.png" alt="Outdoor terrace seating" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Terrace Vibes</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-barista.png" alt="Barista crafting latte art" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>The Art of Coffee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reverse direction row -->
+        <div class="gallery-marquee-wrapper reverse" data-animate="fade-up" data-delay="2">
+            <div class="gallery-marquee" id="gallery-marquee-2">
+                <div class="gallery-track reverse">
+                    <div class="gallery-card">
+                        <img src="images/cafe-barista.png" alt="Barista crafting latte art" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Latte Art</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-outdoor.png" alt="Outdoor terrace" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Al Fresco Dining</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-interior.png" alt="Interior warmth" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Warm Corners</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-food.png" alt="Coffee and pastry" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Daily Fresh</span>
+                        </div>
+                    </div>
+                    <!-- duplicates -->
+                    <div class="gallery-card">
+                        <img src="images/cafe-barista.png" alt="Barista crafting latte art" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Latte Art</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-outdoor.png" alt="Outdoor terrace" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Al Fresco Dining</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-interior.png" alt="Interior warmth" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Warm Corners</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="images/cafe-food.png" alt="Coffee and pastry" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span>Daily Fresh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT & LOCATION ═══════════ -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Contact & Location</h2>
+                <p class="section-subtitle">We'd love to hear from you. Drop by or reach out — the kettle's always on.</p>
+            </div>
+
+            <div class="contact-grid" data-animate="fade-up" data-delay="1">
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3>Send us a message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="form-name" placeholder=" " required>
+                            <label for="form-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" placeholder=" " required>
+                            <label for="form-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" rows="4" placeholder=" " required></textarea>
+                            <label for="form-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info & Map -->
+                <div class="contact-info-card">
+                    <div class="info-block">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>42 Brewster Lane, Artisan District<br>New Delhi, India 110001</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon – Fri: 7:00 AM – 10:00 PM<br>Sat – Sun: 8:00 AM – 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Call or Email</h4>
+                            <p>+91 98765 43210<br>hello@clubhousecafe.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.132269324574!2d77.22739231744384!3d28.63280300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place!5e0!3m2!1sen!2sin!4v1682684000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Clubhouse Cafe Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Clubhouse<span class="logo-accent">Cafe</span></span>
+                <p class="footer-tagline">Where every cup tells a story.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clubhouse Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
